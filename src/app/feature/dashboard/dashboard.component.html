@@ -1,1 +1,28 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+    <div class="search-container">
+        <h3>Filtros</h3>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Author">
+        <input type="text" placeholder="Número de estrellas">
+        <button type="submit">Buscar</button>
+    </div>        
+    
+    <div class="list">
+        <h2 class="title">Listado de Libros</h2>
+        <div class="accordion" *ngFor="let book of books">
+          <div class="card">
+            <div class="card-header" (click)="toggleAccordion(book.id)">
+              <h3 class="accordion-title">{{ book.title }}
+                  <span class="symbol">{{ isAccordionOpen(book.id) ? '-' : '+' }}</span>
+              </h3>
+              <i class="fas fa-chevron-down accordion-icon" [ngClass]="{'open': isAccordionOpen(book.id)}"></i>
+            </div>
+            <div class="card-body" [ngClass]="{'open': isAccordionOpen(book.id)}">
+              <p><strong>Author:</strong> {{ book.author }}</p>
+              <p><strong>Stars:</strong> {{ book.starts }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+  

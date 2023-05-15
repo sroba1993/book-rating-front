@@ -2,16 +2,12 @@
   <a class="navbar-brand" href="#">
     <img src="ruta/de/la/imagen/de/libros" alt="Logo">
   </a>
-
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Crear rating de libro</a>
+        <a class="nav-link" [routerLink]="['/login']">Logout</a>
       </li>
     </ul>
-  </div>
-  <div class="search-container">
-    <input type="text" placeholder="filtar por nombre">
-    <button type="submit">Buscar</button>
   </div>
 </nav>

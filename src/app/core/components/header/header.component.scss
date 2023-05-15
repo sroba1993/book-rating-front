@@ -34,24 +34,3 @@
 .nav-link:hover {
   color: #fff;
 }
-
-.search-container {
-  display: flex;
-  align-items: center;
-  input[type="text"] {
-    padding: 6px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
-  }
-  button[type="submit"] {
-    padding: 6px 10px;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    i {
-      color: #343a40;
-    }
-  }
-}

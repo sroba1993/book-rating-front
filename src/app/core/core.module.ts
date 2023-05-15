@@ -8,6 +8,7 @@ import { AuthInterceptor } from './interceptor/auth-interceptor';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AuthenticationService } from './service/authentication.service';
+import { BookService } from './service/book.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AuthenticationService } from './service/authentication.service';
   providers: [
     HttpService,
     AuthenticationService,
+    BookService,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
   ]
