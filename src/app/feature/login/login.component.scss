@@ -1,0 +1,40 @@
+.form-container {
+  height: 90vh; // establece la altura del contenedor al 100% de la altura de la pantalla
+  display: flex; // establece el contenedor como un flex container
+  align-items: center; // centra verticalmente los elementos dentro del contenedor
+  justify-content: center; // centra horizontalmente los elementos dentro del contenedor
+
+  form {
+    background-color: #fff;
+    padding: 120px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      input {
+        height: 20px;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+      }
+    }
+
+    button {
+      height: 45px;
+      padding: 15px 60px;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

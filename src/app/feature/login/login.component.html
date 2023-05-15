@@ -1,0 +1,13 @@
+<div class="form-container">
+  <form>
+    <div>
+     <label>Correo electrónico:</label>
+     <input name="user" [(ngModel)]="user">
+    </div>
+    <div>
+     <label>Contraseña:</label>
+     <input type="password" name="password" [(ngModel)]="password">
+    </div>
+   <button type="submit" (click)="onLogin()">Iniciar sesión</button>
+  </form>
+</div>
